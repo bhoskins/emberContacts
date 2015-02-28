@@ -41,12 +41,14 @@
 <div class="sidebar-wrap">
 <h1>People in the kNow</h1>
   <ul id="members-list">
+    {{#each item in model}}
 
     <li>
-    First Name: {{firstName}}
+    First Name: {{item.model.firstName}}
     <button class="edit-button">Edit</button>
     <button class="delete-button">X</button>
     </li>
+    {{/each}}
 
 
   </ul>

@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
+var Contact = DS.Model.extend({
   // id: DS.attr('string'),
   firstName: DS.attr('string'),
   lastName: DS.attr('string'),
@@ -9,11 +9,13 @@ export default DS.Model.extend({
   wantsNewsletter: DS.attr('boolean'),
   isActive: DS.attr('boolean')
 
-}).reopenClass({
+});
+
+Contact.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      firstName: "Beth",
+      firstName: 'Beth',
       lastName: "Hoskins",
       email: "bhoskins@charter.net",
       password: "1234",
@@ -22,7 +24,7 @@ export default DS.Model.extend({
     },
     {
       id: 2,
-      firstName: "Maya",
+      firstName: 'Maya',
       lastName: "Angelou",
       email: "maya@charter.net",
       password: "1234",
@@ -32,3 +34,5 @@ export default DS.Model.extend({
 
   ]
 });
+
+export default Contact;
