@@ -1,0 +1,87 @@
+@import "bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+$max-width: 600px;
+
+$heading-color: teal;
+$primary-color: navy;
+
+$margin-top: 30px;
+
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: arial, sans-serif;
+  color: black;
+}
+
+a, li, ,ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  margin: 40px auto;
+  text-align: center;
+}
+
+/*** Page Positioning **/
+
+.join-form,
+.sidebar-wrap {
+  display: inline-block;
+}
+
+.sidebar-wrap {
+  width: 30%;
+  margin-top: $margin-top;
+  vertical-align: top;
+}
+
+.join-form {
+  width: 50%;
+  margin: $margin-top;
+  vertical-align: top;
+}
+
+/**************
+  .join-form
+  ************/
+
+h1 {
+  color: $heading-color;
+  margin: 0 auto;
+}
+
+.input-wrap {
+  margin-right: 70px;
+  border: 1px solid blue;
+}
+
+.input-wrap {
+  margin-left: 20px;
+  text-align: right;
+}
+
+input {
+  line-height: 1.5em;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+.submit {
+  height: 40px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+/***************
+   .sidebar-wrap
+   *************/
+
+
